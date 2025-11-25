@@ -1,0 +1,9 @@
+TO RUN
+PS C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\build> ./Debug/PeakGen.exe
+
+TO BUILD (after editing cpp files)
+PS C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\build> cmake --build . --config Debug
+
+TO BUILD (after editing CMakeLists.txt)
+PS C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\build> cmake ..
+PS C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\build> cmake --build

@@ -1,0 +1,12 @@
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/CMakeFiles/glad.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/CMakeFiles/PeakGen.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/CMakeFiles/INSTALL.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/uninstall.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/INSTALL.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/ALL_BUILD.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/CMakeFiles/glfw.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/CMakeFiles/update_mappings.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/CMakeFiles/INSTALL.dir
+C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/docs/CMakeFiles/INSTALL.dir
