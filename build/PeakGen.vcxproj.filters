@@ -19,6 +19,9 @@
     <ClCompile Include="C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\src\grid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\src\lighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\ultim\OneDrive\Documents\UTD\FALL25\Computer Graphics\PeakGen\CMakeLists.txt" />

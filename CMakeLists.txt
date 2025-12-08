@@ -18,17 +18,20 @@ set(SOURCES
     src/shader.cpp
     src/camera.cpp
     src/grid.cpp
+    src/lighting.cpp
 )
 
 # Executable
 add_executable(PeakGen ${SOURCES})
 
 # Include headers
-target_include_directories(PeakGen PRIVATE include)
-target_include_directories(PeakGen PRIVATE external/glfw-3.4/include)
-target_include_directories(PeakGen PRIVATE external/glm-1.0.2)
+target_include_directories(PeakGen PRIVATE
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/external/glfw-3.4/include
+    ${CMAKE_SOURCE_DIR}/external/glm-1.0.2
+)
 
 # Link GLFW and OpenGL
 target_link_libraries(PeakGen PRIVATE glfw glad)
 target_link_libraries(PeakGen PRIVATE opengl32)
-
