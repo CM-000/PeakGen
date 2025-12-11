@@ -7,4 +7,4 @@ cmake ..
 cmake --build . --config Debug
 
 # Run the executable
-./Debug/PeakGen.exe
+./PeakGen.exe

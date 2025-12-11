@@ -186,7 +186,7 @@ int main() {
     // Generate terrain ---------------------------------------------------
     std::vector<float> vertices;
     std::vector<unsigned int> indices;
-    float maxHeight = generateTerrain(15, vertices, indices); // grid size
+    float maxHeight = generateTerrain(30, vertices, indices); // grid size
 
     std::vector<float> normals;
     computeNormals(vertices, indices, normals);
@@ -345,7 +345,7 @@ int main() {
                 data.insert(data.end(), {p.x, p.y+0.02f, p.z, 0.2f, 0.2f, 0.9f});
             }
 
-            glPointSize(3.0f);
+            glPointSize(8.0f);
             glBindVertexArray(visitedVAO);
             glBindBuffer(GL_ARRAY_BUFFER, visitedVBO);
             glBufferData(GL_ARRAY_BUFFER, data.size()*sizeof(float), data.data(), GL_DYNAMIC_DRAW);
@@ -367,7 +367,7 @@ int main() {
                 data.insert(data.end(), {p.x, p.y+0.02f, p.z, 0.9f, 0.5f, 0.1f});
             }
 
-            glPointSize(10.0f);
+            glPointSize(12.0f);
             glBindVertexArray(frontierVAO);
             glBindBuffer(GL_ARRAY_BUFFER, frontierVBO);
             glBufferData(GL_ARRAY_BUFFER, data.size()*sizeof(float), data.data(), GL_DYNAMIC_DRAW);

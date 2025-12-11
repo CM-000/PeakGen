@@ -1,10 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/cmake_install.cmake",
-		"C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/cmake_install.cmake",
-		"C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/cmake_install.cmake",
-		"C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/docs/cmake_install.cmake"
+		"C:/Users/CM/OneDrive/Desktop/PeakGen/build/cmake_install.cmake",
+		"C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/cmake_install.cmake",
+		"C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/src/cmake_install.cmake",
+		"C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/docs/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

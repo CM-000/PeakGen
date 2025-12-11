@@ -75,7 +75,7 @@ std::vector<int> findPath(const std::vector<Node>& graph,
                 dist[e.to] = tentative_g;
                 prev[e.to] = u;
                 float h = heuristic(graph[e.to].position, graph[goalIndex].position);
-                float f = tentative_g + h * 5.0f; // more heuristic weight
+                float f = tentative_g + h * 15.0f; // more heuristic weight
                 openSet.push({e.to, f});
             }
         }
@@ -164,7 +164,7 @@ bool Pathfinder::step(SearchState& state) {
             dist[e.to] = tentative_g;
             prev[e.to] = u;
             float h = heuristic(graph[e.to].position, graph[goalIndex].position);
-            float f = tentative_g + h * 10.0f;
+            float f = tentative_g + h * 15.0f;
             openSet.push({e.to, f});
             state.frontier.push_back(e.to);
         }

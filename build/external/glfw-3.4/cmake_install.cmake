@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/external/glfw-3.4
+# Install script for directory: C:/Users/CM/OneDrive/Desktop/PeakGen/external/glfw-3.4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -32,24 +32,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/cmake_install.cmake")
+# Set path to fallback-tool for dependency-resolution.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/docs/cmake_install.cmake")
+  include("C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/src/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/docs/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/external/glfw-3.4/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/CM/OneDrive/Desktop/PeakGen/external/glfw-3.4/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES
-    "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/glfw3Config.cmake"
-    "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/glfw3ConfigVersion.cmake"
+    "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/src/glfw3Config.cmake"
+    "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/src/glfw3ConfigVersion.cmake"
     )
 endif()
 
@@ -57,7 +62,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3/glfw3Targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3/glfw3Targets.cmake"
-         "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake")
+         "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3/glfw3Targets-*.cmake")
       if(_cmake_old_config_files)
@@ -70,28 +75,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets-debug.cmake")
-  endif()
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets-minsizerel.cmake")
-  endif()
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets-relwithdebinfo.cmake")
-  endif()
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw3" TYPE FILE FILES "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/src/glfw3.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/src/glfw3.pc")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/ultim/OneDrive/Documents/UTD/FALL25/Computer Graphics/PeakGen/build/external/glfw-3.4/install_local_manifest.txt"
+  file(WRITE "C:/Users/CM/OneDrive/Desktop/PeakGen/build/external/glfw-3.4/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

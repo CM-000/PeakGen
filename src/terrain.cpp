@@ -40,7 +40,7 @@ float generateTerrain(int N, std::vector<float>& vertices, std::vector<unsigned 
             // Shrink valleys but keep sign
             if (noiseVal < 0.0f) noiseVal *= 0.2f;
 
-            // Radial falloff so the highest point is near the center
+            // Falloff so the highest point is near the center
             float dist = std::sqrt(x * x + z * z) / radius;
             float falloff = 1.0f - glm::clamp(dist, 0.0f, 1.0f);
 
